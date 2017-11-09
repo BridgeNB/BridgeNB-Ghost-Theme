@@ -1,0 +1,1 @@
+# BridgeNB-Ghost-Theme
