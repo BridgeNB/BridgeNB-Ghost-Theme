@@ -1,0 +1,19 @@
+{{!< layout}}
+
+{{#foreach posts}}
+    <article>
+      <header class="post-header">
+          <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
+          <section class="post-meta">
+              <time class="post-date">{{date format="YYYY MMMM DD"}}</time>
+              {{tags prefix=" 标签："}}
+              文章id：{{id}}
+          </section>
+      </header>
+      <section class="post-excerpt">
+          <p>{{excerpt characters="40"}} <a class="read-more" href="{{url}}">»</a></p>
+      </section>
+    </article>
+{{/foreach}}
+
+{{pagination}}
