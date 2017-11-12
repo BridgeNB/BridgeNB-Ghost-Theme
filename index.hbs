@@ -1,19 +1,26 @@
-{{!< layout}}
-
-{{#foreach posts}}
-    <article>
-      <header class="post-header">
-          <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
-          <section class="post-meta">
-              <time class="post-date">{{date format="YYYY MMMM DD"}}</time>
-              {{tags prefix=" 标签："}}
-              文章id：{{id}}
-          </section>
-      </header>
-      <section class="post-excerpt">
-          <p>{{excerpt characters="40"}} <a class="read-more" href="{{url}}">»</a></p>
-      </section>
-    </article>
-{{/foreach}}
-
-{{pagination}}
+{{!< default}}
+{{> header}}
+<main class="main_uber" role="main">
+  {{#foreach posts}}
+      <article class="article_uber" role="article" itemscope itemtype="http://schema.org/Article">
+        <header class="postheader_uber">
+          <time class="date_uber" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+          <h1 class="posttitle_uber" itemprop="headline"><a href="{{{url}}}" rel="bookmark">
+        </header>
+        <div class="postcontent_uber" itemprop="articleBody">
+          {{content}}
+        </div>
+        {{#if tags}}
+          <div class="posttags_uber">
+            Tags: {{tags separator=" | "}}
+          </div>
+        {{/if}}
+      </article>
+  {{/foreach}}
+  {{#if pagination}}
+    <div class="pagination_uber">
+      {{{pagination}}}
+    </div>
+  {{/if}}
+</main>
+{{> footer}}
