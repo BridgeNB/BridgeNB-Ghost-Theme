@@ -1,14 +1,18 @@
-{{!< layout}}
-
-<h2>标签： {{tag.name}}</h2>
-<hr/>
-
-{{#foreach posts}}
-    <article>
-      <header class="post-header">
-          <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
-      </header>
-    </article>
-{{/foreach}}
-
-{{pagination}}>
+{{!< default}}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-4 col-lg-3" id="left-bar">
+            <div class="row">
+                <div class="col-xs-4 col-md-4" id="navigation">
+                    {{navigation}}
+                </div>
+                <div class="col-xs-8 col-md-8" id="blog-list">
+                    {{> "tag-blog-list"}}
+                </div>
+            </div>
+        </div>
+        <div class="hidden-xs hidden-sm col-xs-12 col-md-8 col-lg-9" id="blog-view">
+            {{> "blog-view"}}
+        </div>
+    </div>
+</div>

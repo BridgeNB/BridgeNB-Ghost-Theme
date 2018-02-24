@@ -1,7 +1,15 @@
 {
-	"name": "bridgenb-theme",
-	"version": "0.1.0",
-	"description": "A evernote like theme",
-	"author": "Yangqiao Zheng",
-	"homepage": "http://www.bridgenb.io/my-theme"
+  "name": "everblog",
+  "description": "A three rows layout ghost blog theme",
+  "version": "0.4.1",
+  "engines": {
+    "ghost": ">=1.0.0"
+  },
+  "license": "GPL",
+  "author": {
+    "email": "account@lialun.io"
+  },
+  "config": {
+    "posts_per_page": 12
+  }
 }

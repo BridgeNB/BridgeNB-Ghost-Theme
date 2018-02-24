@@ -1,26 +1,18 @@
 {{!< default}}
-{{> header}}
-<main class="main_uber" role="main">
-  {{#foreach posts}}
-      <article class="article_uber" role="article" itemscope itemtype="http://schema.org/Article">
-        <header class="postheader_uber">
-          <time class="date_uber" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
-          <h1 class="posttitle_uber" itemprop="headline"><a href="{{{url}}}" rel="bookmark">
-        </header>
-        <div class="postcontent_uber" itemprop="articleBody">
-          {{content}}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-4 col-lg-3" id="left-bar">
+            <div class="row">
+                <div class="col-xs-4 col-md-4" id="navigation">
+                    {{navigation}}
+                </div>
+                <div class="col-xs-8 col-md-8" id="blog-list">
+                    {{> "blog-list"}}
+                </div>
+            </div>
         </div>
-        {{#if tags}}
-          <div class="posttags_uber">
-            Tags: {{tags separator=" | "}}
-          </div>
-        {{/if}}
-      </article>
-  {{/foreach}}
-  {{#if pagination}}
-    <div class="pagination_uber">
-      {{{pagination}}}
+        <div class="hidden-xs hidden-sm col-xs-12 col-md-8 col-lg-9" id="blog-view">
+            {{> "blog-view"}}
+        </div>
     </div>
-  {{/if}}
-</main>
-{{> footer}}
+</div>
