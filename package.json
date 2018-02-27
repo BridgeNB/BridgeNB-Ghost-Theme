@@ -1,13 +1,13 @@
 {
-  "name": "everblog",
-  "description": "A three rows layout ghost blog theme",
+  "name": "grandientBlog",
+  "description": "A three columns grandient color blog",
   "version": "0.4.1",
   "engines": {
     "ghost": ">=1.0.0"
   },
   "license": "GPL",
   "author": {
-    "email": "account@lialun.io"
+    "email": "zyq123258789@gmail.com"
   },
   "config": {
     "posts_per_page": 12

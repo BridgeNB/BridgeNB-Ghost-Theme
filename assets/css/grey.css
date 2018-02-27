@@ -4,9 +4,9 @@
 /*---------------------------------------------*/
 /*------------- navigation(left) --------------*/
 /*---------------------------------------------*/
-/*主体*/
+/* Navigation main */
 #navigation {
-    background-color: #222222;
+    background-color: #13202c;
     box-shadow: inset -15px 0 15px -15px #040404;
 }
 
@@ -33,17 +33,17 @@
 }
 
 /*--------------------------------------------*/
-/*----------  article list(middle)  ----------*/
+/*----------  Blog list(middle)  ----------*/
 /*--------------------------------------------*/
-/*主体*/
+/* Blog list main */
 #blog-list {
+    background-color: #27405c;
     box-shadow: inset -15px 0 15px -15px #090909;
-    background-color: #282828;
 }
 
-/*列表元素*/
+/* Blog list item main */
 #blog-list .list-group-item {
-    background-color: #282828;
+    background-color: #1369aa;
     webkit-box-shadow: inset -15px 0 15px -15px #090909;
     -moz-box-shadow: inset -15px 0 15px -15px #090909;
     box-shadow: inset -15px 0 15px -15px #090909;
@@ -70,11 +70,11 @@
 
 }
 
-/*博客列表*/
+/* blog-list blog-excerpt */
 #blog-list .blog-excerpt {
+    background-color: #27405c;
     border-bottom: 1px solid rgba(22, 22, 22, 0.4);
     border-bottom-left-radius: 0;
-    background-color: #282828;
     color: #FFCC00;
 }
 
@@ -112,11 +112,11 @@
 
 /*makiko*/
 .input--makiko {
-    background: #282828;
+    background-color: #27405c;
 }
 
 .search-info {
-    color: #FFCC00;
+    color: #2e688c;
 }
 
 #search-img path {
@@ -124,14 +124,14 @@
 }
 
 .input__label-content--makiko {
-    color: #FFCC00;
+    color: #2e688c;
 }
 
 /*-----------------------------------------*/
 /*-----------  content(right)  ------------*/
 /*-----------------------------------------*/
 #blog-view {
-    background-color: #333333;
+    background-color: #2e688c;
 }
 
 #blog-view-header div {
@@ -162,7 +162,7 @@
     color: #E0E0E0;
 }
 
-/*博客文本样式*/
+/*Blog View Style*/
 .blog-view-content h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: #FFCC00;
 }
@@ -194,4 +194,37 @@
 
 .blog-view-content a:visited {
     color: #FF9900;
+}
+
+/******Header Style*******/
+
+header {
+  background-color:#52b3d3;
+  left:0px;
+  bottom:0px;
+  height:100px;
+  width:100%;
+}
+
+/*****Footer Style*****/
+
+footer {
+  position: fixed;
+  left:0px;
+  bottom:0px;
+  height:100px;
+  width:100%;
+  background-color:#52b3d3;
+}
+
+.social-icons-list {
+  list-style: none;
+}
+
+.social-icon {
+  display: inline;
+}
+
+p {
+  font-size: 15;
 }
