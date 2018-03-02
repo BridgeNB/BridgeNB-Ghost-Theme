@@ -10,7 +10,7 @@
     box-shadow: inset -15px 0 15px -15px #040404;
 }
 
-/*按钮样式*/
+/* Button Style*/
 #category-list .nav-link {
     color: #FFCC00;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
@@ -198,23 +198,68 @@
 
 /******Header Style*******/
 
-header {
-  background-color:#52b3d3;
+.blog-header {
+  display: flex;
+
+  flex-wrap: wrap;
+  align-content: center;
+
   left:0px;
   bottom:0px;
-  height:100px;
+
   width:100%;
+
+  background-color:#52b3d3;
+  border-bottom: 1px solid #000000;
+}
+
+.header-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-header .grid-cell {
+  flex: 1;
+}
+
+.header-title {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.header-subtle {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 /*****Footer Style*****/
 
-footer {
+.blog-footer {
   position: fixed;
+  display: flex;
+
+  flex-wrap: wrap;
+  align-content: center;
+
   left:0px;
   bottom:0px;
-  height:100px;
+
   width:100%;
+
   background-color:#52b3d3;
+  border-top: 1px solid #000000;
+}
+
+[class$='cell'] {
+  display: flex;
+  margin: 10px;
+  padding: 4px;
+  border-radius: 2%;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-icons-list {
@@ -223,8 +268,17 @@ footer {
 
 .social-icon {
   display: inline;
+  margin: 5px;
 }
 
 p {
   font-size: 15;
+}
+
+.blog-footer .grid-cell {
+  flex: 1;
+}
+
+.footer-blog-copyright {
+  margin: 10px;
 }
