@@ -219,20 +219,20 @@
 }
 
 .blog-header .grid-cell {
-  flex: 1;
+  flex: 1.25;
 }
 
 .header-title {
   font-family: Helvetica;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #000000;
 }
 
 .header-subtle {
   font-family: Helvetica;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 /*****Footer Style*****/
