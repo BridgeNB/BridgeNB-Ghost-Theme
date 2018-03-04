@@ -238,19 +238,22 @@
 /*****Footer Style*****/
 
 .blog-footer {
-  position: fixed;
   display: flex;
 
   flex-wrap: wrap;
   align-content: center;
 
-  left:0px;
-  bottom:0px;
-
   width:100%;
 
   background-color:#52b3d3;
   border-top: 1px solid #000000;
+}
+
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 [class$='cell'] {
